@@ -132,7 +132,7 @@ bootflag_write_bootblock( void )
         #endif
     }
 
-#elif defined(CONFIG_R) || defined(CONFIG_200D) || defined(CONFIG_6D2) || defined(CONFIG_750D)
+#elif defined(CONFIG_R) || defined(CONFIG_200D) || defined(CONFIG_6D2) || defined(CONFIG_750D) || defined(CONFIG_760D)
     // These only have one device struct.  Struct is 4 u32s,
     // first two are function pointers.  Check the "second" device
     // doesn't use the first two fields as function pointers.
